@@ -1,0 +1,25 @@
+# Gérer automatiquement les fins de ligne
+* text=auto
+
+# Garder LF pour les fichiers de config, scripts, etc.
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.code-workspace text eol=lf
+
+# Binaire → pas de conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary

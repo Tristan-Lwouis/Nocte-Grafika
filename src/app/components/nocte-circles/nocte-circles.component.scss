@@ -1,0 +1,49 @@
+/* Animation */
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  
+  /* Conteneur des cercles */
+  .circleContainer {
+    position: fixed;
+    left: 50%;
+    transform: translate(-130%, 150%); //X, Y
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+    pointer-events: none;
+    //overflow: hidden; //A garder pour la section avis !
+  }
+  
+  /* Responsive */
+  @media (min-width: 640px) { //Mobile
+    .circleContainer {
+      top: 35%;
+      width: 900px;
+      height: 400px;
+    }
+  }
+  @media (min-width: 768px) { //Desktop
+    .circleContainer {
+      top: 20%;
+      width: 50%;
+      height: 600px;
+    }
+  }
+  
+  /* Cercles */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    animation: rotation infinite linear;
+    /* Si c'est une image ou autre, adapte ici */
+  }
+  
+  /* Déclaration rapide par ID (exemple) */
+  #circle01 { animation-duration: 150s; width: 80%; opacity: 1; }
+  #circle02 { animation-duration: 100s; width: 66%; opacity: 0.85; }
+  #circle03 { animation-duration: 70s;  width: 54%; opacity: 0.75; }
+
+  
